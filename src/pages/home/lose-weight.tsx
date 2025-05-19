@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 
 export function LoseWeight() {
   return (
-    <section className="w-full px-4 md:px-8 lg:px-16 bg-white">
+    <section className="w-full px-4 mt-4 md:px-8 lg:px-16 bg-white">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center">
-        <div className="space-y-6 text-foreground py-16">
+        <div className="space-y-6 text-foreground py-4 md:py-16">
           <h2 className="text-4xl md:text-6xl font-bold text-pink-400">EMAGREÇA COM SAÚDE</h2>
           <p className="text-lg">
             O poder sinergético do Thermo Pink <strong>transforma o seu corpo</strong> em um potente

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 export function SummaryBenefits() {
 
   return (
-    <section className="relative w-full py-20 px-4 md:px-8 lg:px-16">
+    <section className="relative w-full py-12 md:py-0 px-4 md:px-8 lg:px-16">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <img
           src={ProductsImg}

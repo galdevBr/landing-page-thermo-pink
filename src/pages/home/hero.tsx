@@ -15,9 +15,9 @@ export function Hero() {
   ]
 
   return (
-    <section className="relative w-full py-20 px-4 md:px-8 lg:px-16">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div className="space-y-8">
+    <section className="relative w-full px-4 md:px-8 lg:px-16">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2">
+        <div className="space-y-8 pt-8 md:pt-20">
           <img src={ThermoPinkLogo} alt="Thermo Pink Produto" className="w-36" />
           <h1 className="text-4xl md:text-[5rem] font-extrabold text-pink-500 italic uppercase">PARA SECAR SUA BARRIGA</h1>
 
@@ -36,7 +36,7 @@ export function Hero() {
 
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 ">
             <Button >
               COMPRAR AGORA
             </Button>
@@ -45,11 +45,12 @@ export function Hero() {
 
 
         {/* //TODO: FIX IMAGE */}
-        <div className="h-[400px] md:h-[500px]">
+        {/* <div className="h-[400px] md:h-[500px]"> */}
+        <div className="mt-0 hidden md:flex md:w-[1050px] -ml-32">
           <img
             src={HeroImg}
             alt="Thermo Pink Produto"
-          // className="object-contain drop-shadow-[0_0_15px_rgba(255,0,153,0.5)]"
+            className="object-contain drop-shadow-[0_0_15px_rgba(255,0,153,0.5)]"
           // priority
           />
         </div>

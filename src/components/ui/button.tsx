@@ -12,7 +12,7 @@ const buttonVariants = cva(
         default:
           "bg-primary text-primary-foreground shadow hover:bg-primary/90",
         primaryPink: "bg-pink-500 text-white shadow hover:bg-pink-500/90",
-        secondaryPink: "border border-pink-500 text-pink-500 shadow-sm hover:bg-pink-500/80",
+        secondaryPink: "border border-pink-500 text-pink-500 shadow-sm hover:bg-pink-500/80 hover:text-white",
         destructive: 
           "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
@@ -23,7 +23,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
-        defaultPink: "h-10 px-6 py-6 text-xl",
+        defaultPink: "h-10 p-4 md:px-6 md:py-6 text-xl",
         default: "h-9 px-4 py-2",
         sm: "h-8 rounded-md px-3 text-xs",
         lg: "h-10 rounded-md px-8",

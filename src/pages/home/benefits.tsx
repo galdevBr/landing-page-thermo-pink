@@ -2,6 +2,7 @@ import ShirtIcon from "@/assets/icons/camiseta.svg"
 import CutleryIcon from "@/assets/icons/cutlery.svg"
 import PowerIcon from "@/assets/icons/power.svg"
 import TorsoIcon from "@/assets/icons/torso.svg"
+import { ShadowedStrokeTitle } from "@/components/shadowed-stroke-title"
 import { Button } from "@/components/ui/button"
 
 export function Benefits() {
@@ -17,19 +18,11 @@ export function Benefits() {
   ]
 
   return (
-    <section className="w-full py-16 px-4 md:px-8 lg:px-16">
+    <section className="w-full py-4 md:py-16 px-4 md:px-8 lg:px-16 md:mt-12">
       <div className="container mx-auto space-y-8">
-        <div className="relative flex items-center justify-center gap-4 text-center">
-          <span className="md:visible hidden absolute text-[9rem] font-extrabold italic text-transparent 
-               bg-clip-text pointer-events-none select-none 
-               [-webkit-text-stroke:2px_#DF0071] opacity-15"
-          >
-            BENEFÍCIOS
-          </span>
-          <span className="relative text-4xl md:text-7xl font-bold italic text-pink-500">
-            BENEFÍCIOS
-          </span>
-        </div>
+        <ShadowedStrokeTitle>
+          BENEFÍCIOS
+        </ShadowedStrokeTitle>
 
         <p className="text-xl md:text-3xl uppercase font-regular italic text-center">
           Alternativa perfeita para quem realmente deseja perder peso e medidas
