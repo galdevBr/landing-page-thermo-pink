@@ -36,7 +36,7 @@ export function ProductOffer() {
             <div className="p-1 md:p-2 border-2 md:border-4 border-pink-500 rounded-full">
               <Bitcoin className="w-6 h-6 md:w-12 md:h-12 text-pink-500" />
             </div>
-            <p className="italic md:text-4xl font-bold">
+            <p className="italic text-sm md:text-4xl font-bold">
               ACEITAMOS TAMBÉM <span className="text-pink-500">CRIPTOMOEDAS</span>
             </p>
           </div>

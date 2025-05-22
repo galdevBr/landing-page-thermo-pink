@@ -30,7 +30,7 @@ export function BarChartComponent() {
     <div className="w-full h-full relative">
 
       {/* //TODO: FIX ABSOLUTE POSITION */}
-      <div className="absolute right-22 translate-x-1/2 -translate-y-1/2 flex top-30 md:top-50 gap-2 text-white"> 
+      <div className="absolute right-22 translate-x-1/2 -translate-y-1/2 flex bottom-5 gap-2 text-white"> 
         <ArrowBigUp className="h-10 w-10 md:h-12 md:w-12 text-white" fill="white" />
         <p className="text-4xl md:text-5xl font-sans font-bold text-white">33%</p>
       </div>

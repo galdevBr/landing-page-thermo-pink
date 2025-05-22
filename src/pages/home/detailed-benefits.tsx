@@ -19,7 +19,7 @@ export function DetailedBenefits() {
           {benefitsList.map((benefit, index) => (
             <div key={index} className="flex items-start gap-3">
               <CheckCircle className="text-pink-400 h-6 w-6 flex-shrink-0 mt-0.5" />
-              <p className="text-foreground italic">{benefit}</p>
+              <p className="text-foreground text-sm md:text-base italic">{benefit}</p>
             </div>
           ))}
           <div className="flex gap-4 mt-8">

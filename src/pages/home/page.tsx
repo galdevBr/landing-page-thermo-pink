@@ -1,4 +1,5 @@
 import { Benefits } from "./benefits";
+import { ContactSection } from "./contact";
 import { DetailedBenefits } from "./detailed-benefits";
 import { FAQSection } from "./faq";
 import { Footer } from "./footer";
@@ -23,7 +24,7 @@ export function Home() {
       <NutricionalDetails />
       <ProductOffer />
       <FAQSection />
-      
+      <ContactSection />
       <Footer />
     </main>
   )
