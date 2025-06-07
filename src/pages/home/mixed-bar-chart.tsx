@@ -29,7 +29,7 @@ const chartConfig = {
 
 export function BarChartComponent() {
   const { ref, inView } = useInView({
-    threshold: 0.2, // Trigger when element is 20% visible
+    threshold: 0.5, // Trigger when element is 20% visible
     triggerOnce: true,
   })
 
