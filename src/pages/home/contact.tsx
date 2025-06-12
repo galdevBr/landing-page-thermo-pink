@@ -70,7 +70,7 @@ export function ContactSection() {
   const linkList = [
     { title: 'Instagram', text: '@thermopink', link: '#', svg: instagramSvg },
     { title: 'Email', text: 'contato@thermopink.com', link: '#', svg: EmailSvg },
-    { title: 'WhatsApp', text: '+55 15 9999-9999', link: '#', svg: whatsAppSvg },
+    { title: 'WhatsApp', text: '+55 15 99747-5220', link: '#', svg: whatsAppSvg },
   ]
 
   return (
@@ -104,7 +104,7 @@ export function ContactSection() {
 
         <div className="flex flex-col md:flex-row gap-8 md:gap-40 mt-12 mx-auto justify-center text-center md:text-start">
           <div>
-            <p className="text-pink-500 text-xl font-bold uppercase mb-2">Atendimento</p>
+            <p className="text-pink-500 text-4xl font-[Bebas_Neue] font-bold uppercase mb-2">Atendimento</p>
             <ul className="space-y-2">
               <li className="space-y-2">
                 <span className="font-bold">Horário de funcionamento</span>
@@ -136,15 +136,15 @@ export function ContactSection() {
                         c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867 
                         C276.546,215.678,222.799,268.994,156.734,268.994z"/>
                   </svg>
-                  <span className="text-white text-sm">+55 15 99999-9999</span>
+                  <span className="text-white text-sm">+55 15 99747-5220</span>
                 </div>
               </li>
             </ul>
           </div>
 
           <div>
-            <p className="text-pink-500 text-xl font-bold uppercase mb-2">Institucional</p>
-            <ul className="space-y-2">
+            <p className="text-pink-500 text-4xl font-[Bebas_Neue] font-bold uppercase mb-2">Institucional</p>
+            <ul className="space-y-1">
               <li>
                 <a href="#" className="hover:text-pink-500">
                   Sobre
@@ -169,8 +169,8 @@ export function ContactSection() {
           </div>
 
           <div>
-            <p className="text-pink-500 text-xl font-bold uppercase mb-2">AJUDA</p>
-            <ul className="space-y-2">
+            <p className="text-pink-500 text-4xl font-[Bebas_Neue] font-bold uppercase mb-2">AJUDA</p>
+            <ul className="space-y-1">
               <li>
                 <a href="#" className="hover:text-pink-500">
                   Produto

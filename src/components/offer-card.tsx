@@ -32,11 +32,11 @@ export function OfferCard({ product }: IProps) {
       }
     >
       <CardHeader className="text-center">
-        <CardTitle className="uppercase tracking-tighter">{title}</CardTitle>
+        <CardTitle className="uppercase font-[Bebas_Neue] text-3xl tracking-wide">{title}</CardTitle>
         <CardDescription
           className={
             cn(
-              "italic text-pink-500 text-3xl font-extrabold",
+              "italic text-pink-500 text-4xl font-extrabold",
               { "text-white": isPopular }
             )
           }
@@ -57,24 +57,25 @@ export function OfferCard({ product }: IProps) {
 
         <div className="bg-black rounded-md text-center text-lg text-white py-4 px-10">
           <p>Contém {numberOfProducts} potes</p>
-          <p>com 60 cápsulas</p>
+          <p>com 60 cápsulas</p> 
+          {/* TODO: multiply number of product by 60 */}
         </div>
 
-        <div className="text-center space-y-1">
+        <div className="text-center text-lg space-y-1">
           <p><strong>{formattedPrice}</strong> à vista ou</p>
           <p className={cn(
-            "text-pink-400",
+            "text-pink-400 text-2xl",
             { "text-white": isPopular }
           )}>
             12x
-            <span className="font-bold text-7xl"> {intPart}</span>,
-            <span className="font-bold text-2xl">{decimalPart}</span>
+            <span className="font-bold text-8xl"> {intPart}</span>,
+            <span className="font-bold text-3xl">{decimalPart}</span>
           </p>
         </div>
       </CardContent>
 
       <CardFooter className="justify-center">
-        <Button className={cn({ "bg-black hover:bg-black/80": isPopular })}>
+        <Button className={cn("italic font-bold" , { "bg-black hover:bg-black/80": isPopular })}>
           COMPRAR AGORA
         </Button>
       </CardFooter>

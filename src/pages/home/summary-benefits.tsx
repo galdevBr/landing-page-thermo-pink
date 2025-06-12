@@ -13,13 +13,13 @@ export function SummaryBenefits() {
         />
 
         <div className="space-y-8">
-          <h2 className="text-4xl md:text-6xl font-bold text-pink-500 mb-8 leading-relaxed">
+          <h2 className="text-4xl md:text-6xl font-bold text-pink-500 mb-8">
             FACILITE SEU EMAGRECIMENTO
           </h2>
 
-          <p className="text-xl md:text-3xl uppercase font-medium leading-relaxed">De forma natural, inovadora e saudável</p>
+          <p className="text-xl md:text-3xl uppercase font-medium w-2/3">De forma natural, inovadora e saudável</p>
 
-          <p className="text-lg md:text-xl">
+          <p className="text-base md:text-lg w-2/3">
             <strong>
               Para aquela pessoa que deseja iniciar um método de emagrecimento e nunca tentou nada antes,
               indicamos o ThermoPink.

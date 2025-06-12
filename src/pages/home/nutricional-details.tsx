@@ -10,13 +10,15 @@ export function NutricionalDetails() {
           </div>
 
           <div className="text-foreground space-y-2 justify-start">
-            <p className="uppercase ">
-              <strong>Ingredientes:</strong> átaurina, afemina, cafeína, extrato de laranja,
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, porro necessitatibus vitae maiores
-              quaerat placeat nulla velit aspernatur cum enim inventore nesciunt labore voluptatum sunt. Consequuntur
-              minus fuga perspiciatis officia. <strong>Não contém glúten.</strong>
+            <p className="uppercase  ">
+              <strong>Ingredientes:</strong> ÁTAURINA, ARGININA, CARNITINA, CAFEÍNA, EXTRATO DE LARANJA MORO
+              [CITRUS SINENSIS (L.) OSBECK], BISGLICINATO DE ZINCO (ZINCO), PICOLINATO DE CROMO (CROMO), COLECALCIFEROL 
+              (VITAMINA D), RIBOFLAVINA (VITAMINA B2), CLORIDRATO DE TIAMINA (VITAMINA B1), METILCOBALAMINA 
+              (VITAMINA B12), ANTIUMECTANTE DIÓXIDO DE SILÍCIO E ESTEARATO DE MAGNÉSIO.COMPOSIÇÃO DA CÁPSULA: GELATINA, 
+              ÁGUA PURIFICADA E CORANTES AZORRUBINA, AMARELO DE QUINOLEÍNA, PONCEAU 4R E DIÓXIDO DE TITÂNIO. 
+              <strong> Não contém glúten.</strong>
             </p>
-            <p>Produto dispensado de obrigatoriedade de registro conforme ROC nº 240/2018.</p>
+            <p>Produto dispensado de obrigatoriedade de registro conforme RDC nº 240/2018.</p>
             <p>Lotes data de fabricação e validade, ver impressão na embalagem.</p>
             <p>24 Meses.</p>
           </div>

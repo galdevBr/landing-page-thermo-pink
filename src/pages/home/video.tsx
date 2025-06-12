@@ -39,6 +39,7 @@ export function Video() {
               className="object-contain drop-shadow-[0_0_15px_rgba(255,0,153,0.5)] h-[150px] md:h-[400px] -mr-20"
             />
 
+            {/* TODO: It is not a button */}
             <Button
               variant={"secondaryPink"}
               className="italic"
@@ -73,7 +74,7 @@ export function Video() {
             </div>
           </div>
         </div>
-
+        
         <Button variant="secondaryPink" className="text-white">COMECE AGORA</Button>
       </div>
 
