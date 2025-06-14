@@ -1,4 +1,4 @@
-import logoThermoDark from "@/assets/logo-thermo-dark.svg";
+import logoThermoDark from "@/assets/logo-thermo.png";
 import { ContactLink } from "@/components/contact-link";
 import { ShadowedStrokeTitle } from "@/components/shadowed-stroke-title";
 

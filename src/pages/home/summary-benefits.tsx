@@ -1,4 +1,4 @@
-import ProductsImg from "@/assets/products-image.svg"
+import ProductsImg from "@/assets/products-image.png"
 import { Button } from "@/components/ui/button"
 
 export function SummaryBenefits() {
@@ -9,13 +9,13 @@ export function SummaryBenefits() {
         <img
           src={ProductsImg}
           alt="Thermo Pink Produtos"
-          className="object-contain drop-shadow-[0_0_15px_rgba(255,0,153,0.5)] w-[90%]"
+          className="object-contain w-[90%]"
         />
 
         <div className="space-y-8">
-          <h2 className="text-4xl md:text-6xl font-bold text-pink-500 mb-8">
+          <p className="text-4xl md:text-6xl font-bold text-pink-500 mb-8">
             FACILITE SEU EMAGRECIMENTO
-          </h2>
+          </p>
 
           <p className="text-xl md:text-3xl uppercase font-medium w-2/3">De forma natural, inovadora e saudável</p>
 

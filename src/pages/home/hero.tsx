@@ -1,5 +1,5 @@
 import HeroImg from "@/assets/hero-image.svg";
-import ThermoPinkLogo from "@/assets/logo-thermo-pink.svg";
+import ThermoPinkLogo from "@/assets/logo-thermo.png";
 
 import { Button } from "@/components/ui/button";
 import { CircleCheckBig } from "lucide-react";
@@ -21,7 +21,7 @@ export function Hero() {
 
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2">
         <div className="space-y-8 pt-8 md:pt-20">
-          <img src={ThermoPinkLogo} alt="Thermo Pink Produto" className="w-36" />
+          <img src={ThermoPinkLogo} alt="Thermo Pink Produto" className="" />
           <h1 className="text-4xl md:text-[5rem] font-extrabold text-pink-500 italic uppercase pr-10">PARA SECAR SUA BARRIGA</h1>
 
           <p className="text-xl md:text-3xl uppercase font-medium italic">Com muito mais energia</p>

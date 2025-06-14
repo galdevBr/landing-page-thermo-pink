@@ -1,4 +1,4 @@
-import productImg from "@/assets/video-section-product.svg"
+import productImg from "@/assets/video-section-product.png"
 import { Button } from "@/components/ui/button"
 import { BarChartComponent } from "./mixed-bar-chart"
 
@@ -18,7 +18,7 @@ export function Video() {
   return (
     <section className="w-full py-16 px-4 md:px-8 lg:px-16 bg-background">
       <div className="container flex flex-col items-center mx-auto space-y-8 md:space-y-12">
-        <div className="relative w-full aspect-video bg-pink-500 p-4 mx-auto max-w-5xl rounded-lg pt-12">
+        <div className="relative w-full aspect-video bg-pink-500 p-4 mx-auto max-w-5xl rounded-lg">
           <iframe
             className="w-full h-full rounded-lg"
             width="100%"
@@ -32,20 +32,16 @@ export function Video() {
         </div>
 
         <div className="grid md:grid-cols-2 max-w-5xl gap-8 md:gap-2">
-          <div className="flex flex-col justify-center items-center space-y-4 text-center">
+          <div className="flex flex-col justify-center items-center space-y-8 text-center">
             <img
               src={productImg}
               alt="Thermo Pink Produtos"
-              className="object-contain drop-shadow-[0_0_15px_rgba(255,0,153,0.5)] h-[150px] md:h-[400px] -mr-20"
+              className="object-contain h-[150px] md:h-[400px]"
             />
 
-            {/* TODO: It is not a button */}
-            <Button
-              variant={"secondaryPink"}
-              className="italic"
-            >
+            <div className="inline-flex items-center justify-center italic rounded-lg h-10 p-4 md:px-6 md:py-6 text-xl font-medium border border-pink-500 text-pink-500">
               100% Registrada pela ANVISA
-            </Button>
+            </div>
           </div>
 
 

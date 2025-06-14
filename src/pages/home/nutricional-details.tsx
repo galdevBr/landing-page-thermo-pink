@@ -1,3 +1,4 @@
+import IngredientsImg from "@/assets/ingredients-image.png";
 import { NutricionalTable } from "@/components/nutricional-table";
 
 export function NutricionalDetails() {
@@ -21,7 +22,10 @@ export function NutricionalDetails() {
             <p>Produto dispensado de obrigatoriedade de registro conforme RDC nº 240/2018.</p>
             <p>Lotes data de fabricação e validade, ver impressão na embalagem.</p>
             <p>24 Meses.</p>
+            
+            <img src={IngredientsImg} className="flex justify-self-center" />
           </div>
+
 
         </div>
       </div>

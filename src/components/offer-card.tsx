@@ -26,8 +26,8 @@ export function OfferCard({ product }: IProps) {
     <Card
       className={
         cn(
-          "bg-gradient-to-b from-white to-gray-300 border-none max-w-md",
-          { "from-pink-300 to-pink-400": isPopular }
+          "bg-gradient-to-b from-white to-[#D8D8D8] border-none max-w-md",
+          { "from-[#FF8CC7] to-[#FF0286]": isPopular }
         )
       }
     >
@@ -46,10 +46,16 @@ export function OfferCard({ product }: IProps) {
       </CardHeader>
 
       <CardContent className="space-y-4">
-        <div className="relative">
-          <img src={productImg} alt="product" />
+        <div className="relative flex justify-center items-center">
+          <img src={productImg} alt="product" className="h-80" />
 
-          <div className={cn("absolute top-10 right-2 bg-black text-white rounded-full px-5 py-6 text-center", { "bg-pink-400": numberOfProducts === 3 })}>
+          <div
+            className={cn(
+              "absolute top-10 right-2 bg-black text-white rounded-full px-5 py-6 text-center",
+              { "bg-pink-400": numberOfProducts === 3 },
+              { "hidden": numberOfProducts === 1 }
+            )}
+          >
             <p className="font-bold">{pricePerProduct}</p>
             <p>o pote</p>
           </div>
@@ -57,7 +63,7 @@ export function OfferCard({ product }: IProps) {
 
         <div className="bg-black rounded-md text-center text-lg text-white py-4 px-10">
           <p>Contém {numberOfProducts} potes</p>
-          <p>com 60 cápsulas</p> 
+          <p>com 60 cápsulas</p>
           {/* TODO: multiply number of product by 60 */}
         </div>
 
@@ -74,8 +80,8 @@ export function OfferCard({ product }: IProps) {
         </div>
       </CardContent>
 
-      <CardFooter className="justify-center">
-        <Button className={cn("italic font-bold" , { "bg-black hover:bg-black/80": isPopular })}>
+      <CardFooter className="justify-center mb-4">
+        <Button className={cn("italic font-bold rounded-2xl", { "bg-black hover:bg-black/80": isPopular })}>
           COMPRAR AGORA
         </Button>
       </CardFooter>
