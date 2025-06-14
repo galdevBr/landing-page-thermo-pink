@@ -74,7 +74,10 @@ export function ContactSection() {
   ]
 
   return (
-    <section className="w-full py-16 px-4 md:px-8 lg:px-16 space-y-16">
+    <section className="relative w-full py-16 px-4 md:px-8 lg:px-16 space-y-16">
+      <div className="absolute bottom-[50px] left-[-600px] w-[900px] h-[900px] md:w-[1200px] md:h-[1200px] bg-pink-500 opacity-15 rounded-full filter blur-[100px] z-0" />
+      <div className="absolute top-[-100px] right-[-900px] w-[900px] h-[900px] md:w-[1200px] md:h-[1200px] bg-pink-400 opacity-25 rounded-full filter blur-[1200px] z-0" />
+
       <div className="container mx-auto text-center space-y-6">
         <ShadowedStrokeTitle>
           ENTRE EM CONTATO

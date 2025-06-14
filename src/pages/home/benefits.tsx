@@ -18,7 +18,9 @@ export function Benefits() {
   ]
 
   return (
-    <section className="w-full py-4 md:py-16 px-4 md:px-8 lg:px-16 md:mt-12">
+    <section className="relative w-full py-4 md:py-16 px-4 md:px-8 lg:px-16 md:mt-12">
+      <div className="absolute bottom-[-500px] right-[-400px] w-[600px] h-[600px] md:w-[900px] md:h-[900px] bg-pink-500 opacity-10 rounded-full filter blur-[100px] z-0" />
+
       <div className="container mx-auto space-y-8">
         <ShadowedStrokeTitle>
           BENEFÍCIOS

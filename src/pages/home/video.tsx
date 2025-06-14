@@ -16,7 +16,11 @@ export function Video() {
   ]
 
   return (
-    <section className="w-full py-16 px-4 md:px-8 lg:px-16 bg-background">
+    <section className="relative w-full py-16 px-4 md:px-8 lg:px-16 bg-background">
+      <div className="absolute bottom-[200px] left-[-500px] w-[900px] h-[900px] md:w-[1000px] md:h-[1000px] bg-pink-500 opacity-15 rounded-full filter blur-[100px] z-0" />
+      <div className="absolute top-[-200px] right-[-600px] w-[900px] h-[900px] md:w-[1000px] md:h-[1000px] bg-pink-400 opacity-25 rounded-full filter blur-[100px] z-0" />
+
+
       <div className="container flex flex-col items-center mx-auto space-y-8 md:space-y-12">
         <div className="relative w-full aspect-video bg-pink-500 p-4 mx-auto max-w-5xl rounded-lg">
           <iframe

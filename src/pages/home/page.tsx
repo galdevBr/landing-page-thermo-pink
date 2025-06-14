@@ -13,7 +13,7 @@ import { Video } from "./video";
 
 export function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-gradient-to-b from-background to-black text-white">
+    <main className="flex min-h-screen flex-col bg-gradient-to-b from-background to-black text-white overflow-hidden">
       <Hero />
       <SummaryBenefits />
       <Benefits />
