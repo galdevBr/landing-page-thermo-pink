@@ -26,7 +26,7 @@ export function OfferCard({ product }: IProps) {
     <Card
       className={
         cn(
-          "bg-gradient-to-b from-white to-[#D8D8D8] border-none max-w-md",
+          "bg-gradient-to-b from-white to-[#D8D8D8] border-none max-w-md min-w-md",
           { "from-[#FF8CC7] to-[#FF0286]": isPopular }
         )
       }
@@ -63,8 +63,7 @@ export function OfferCard({ product }: IProps) {
 
         <div className="bg-black rounded-md text-center text-lg text-white py-4 px-10">
           <p>Contém {numberOfProducts} potes</p>
-          <p>com 60 cápsulas</p>
-          {/* TODO: multiply number of product by 60 */}
+          <p>com {numberOfProducts * 60} cápsulas</p>
         </div>
 
         <div className="text-center text-lg space-y-1">

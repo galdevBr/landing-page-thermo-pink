@@ -1,26 +1,28 @@
+import CertificationGoogleImg from "@/assets/certification-google.png";
+import CertificationSSLImg from "@/assets/certification-ssl.png";
 import logoThermoDark from "@/assets/logo-thermo.png";
 import { ContactLink } from "@/components/contact-link";
 import { ShadowedStrokeTitle } from "@/components/shadowed-stroke-title";
 
 export function ContactSection() {
-  const instagramSvg = (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="w-8 h-8"
-    >
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-    </svg>
-  )
+  // const instagramSvg = (
+  //   <svg
+  //     xmlns="http://www.w3.org/2000/svg"
+  //     width="24"
+  //     height="24"
+  //     viewBox="0 0 24 24"
+  //     fill="none"
+  //     stroke="currentColor"
+  //     strokeWidth="2"
+  //     strokeLinecap="round"
+  //     strokeLinejoin="round"
+  //     className="w-8 h-8"
+  //   >
+  //     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+  //     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+  //     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+  //   </svg>
+  // )
   const whatsAppSvg = (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +70,7 @@ export function ContactSection() {
   )
 
   const linkList = [
-    { title: 'Instagram', text: '@thermopink', link: '#', svg: instagramSvg },
+    // { title: 'Instagram', text: '@thermopink', link: '#', svg: instagramSvg },
     { title: 'Email', text: 'contato@thermopink.com', link: '#', svg: EmailSvg },
     { title: 'WhatsApp', text: '+55 15 99747-5220', link: '#', svg: whatsAppSvg },
   ]
@@ -141,6 +143,11 @@ export function ContactSection() {
                   </svg>
                   <span className="text-white text-sm">+55 15 99747-5220</span>
                 </div>
+              </li>
+
+              <li className="mt-4 space-y-2 flex gap-2 items-center justify-center md:justify-start">
+                <img src={CertificationGoogleImg} />
+                <img src={CertificationSSLImg} />
               </li>
             </ul>
           </div>

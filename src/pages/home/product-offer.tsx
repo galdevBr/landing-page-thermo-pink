@@ -23,7 +23,7 @@ export function ProductOffer() {
           Aproveite os preços exclusivos do nosso site e escolha o melhor combo para você!
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:max-w-7xl mx-auto place-items-center">
           {offersList.map((plan, index) => (
             <OfferCard
               key={index}

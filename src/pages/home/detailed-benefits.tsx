@@ -43,7 +43,7 @@ export function DetailedBenefits() {
           </div>
         </div>
 
-        <div className="flex items-center justify-center">
+        <div className="hidden md:flex items-center justify-center">
           <img
             src={DetailedProductImg}
             alt="Thermo Pink Produto"
