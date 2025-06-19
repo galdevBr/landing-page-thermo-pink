@@ -2,9 +2,13 @@ import CertificationGoogleImg from "@/assets/certification-google.png";
 import CertificationSSLImg from "@/assets/certification-ssl.png";
 import logoThermoDark from "@/assets/logo-thermo.png";
 import { ContactLink } from "@/components/contact-link";
+import { AboutDialog } from "@/components/dialogs/about-dialog";
 import { ShadowedStrokeTitle } from "@/components/shadowed-stroke-title";
+import { useState } from "react";
 
 export function ContactSection() {
+  const [isAboutModalOpen, setIsAboutModalOpen] = useState(false);
+
   // const instagramSvg = (
   //   <svg
   //     xmlns="http://www.w3.org/2000/svg"
@@ -76,6 +80,7 @@ export function ContactSection() {
   ]
 
   return (
+    <>
     <section className="relative w-full py-16 px-4 md:px-8 lg:px-16 space-y-16">
       <div className="absolute bottom-[50px] left-[-600px] w-[900px] h-[900px] md:w-[1200px] md:h-[1200px] bg-pink-500 opacity-15 rounded-full filter blur-[100px] z-0" />
       <div className="absolute top-[-100px] right-[-900px] w-[900px] h-[900px] md:w-[1200px] md:h-[1200px] bg-pink-400 opacity-25 rounded-full filter blur-[1200px] z-0" />
@@ -156,9 +161,9 @@ export function ContactSection() {
             <p className="text-pink-500 text-4xl font-[Bebas_Neue] font-bold uppercase mb-2">Institucional</p>
             <ul className="space-y-1">
               <li>
-                <a href="#" className="hover:text-pink-500">
+                <button onClick={() => setIsAboutModalOpen(true)} className="hover:text-pink-500">
                   Sobre
-                </a>
+                </button>
               </li>
               <li>
                 <a href="#" className="hover:text-pink-500">
@@ -216,5 +221,8 @@ export function ContactSection() {
         </div>
       </div>
     </section>
+
+    {isAboutModalOpen && <AboutDialog isOpen={isAboutModalOpen} onClose={() => setIsAboutModalOpen(false)} />}
+    </>
   )
 }

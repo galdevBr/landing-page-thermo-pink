@@ -1,11 +1,12 @@
-import HeroImg from "@/assets/hero-image.svg";
-// import HeroImg from "@/assets/hero-image.png";
 import ThermoPinkLogo from "@/assets/logo-thermo.png";
+import { lazy, Suspense } from 'react';
 
 import { Button } from "@/components/ui/button";
-import { CircleCheckBig } from "lucide-react";
+import { CircleCheckBig, Loader } from "lucide-react";
 
 export function Hero() {
+  const HeroImg = lazy(() => import("../../components/hero-img"));
+
   const prosList = [
     'Acelera o metabolismo',
     'Queima gordura',
@@ -52,12 +53,17 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="mt-0 hidden lg:flex -ml-32">
+
+        <Suspense fallback={<div className="flex items-center justify-center animate-spin"><Loader /></div>}>
+          <HeroImg />
+        </Suspense>
+        {/* <div className="mt-0 hidden lg:flex -ml-32">
           <img
             src={HeroImg}
             alt="Thermo Pink Produto"
+            // loading="lazy"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   )
