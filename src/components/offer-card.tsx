@@ -26,7 +26,7 @@ export function OfferCard({ product }: IProps) {
     <Card
       className={
         cn(
-          "bg-gradient-to-b from-white to-[#D8D8D8] border-none max-w-md min-w-md",
+          "bg-gradient-to-b from-white to-[#D8D8D8] border-none max-w-md min-w-sm ",
           { "from-[#FF8CC7] to-[#FF0286]": isPopular }
         )
       }
@@ -34,6 +34,7 @@ export function OfferCard({ product }: IProps) {
       <CardHeader className="text-center">
         <CardTitle className="uppercase font-[Bebas_Neue] text-3xl tracking-wide">{title}</CardTitle>
         <CardDescription
+          translate="no"
           className={
             cn(
               "italic text-pink-500 text-4xl font-extrabold",

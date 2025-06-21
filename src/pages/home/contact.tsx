@@ -161,7 +161,7 @@ export function ContactSection() {
             <p className="text-pink-500 text-4xl font-[Bebas_Neue] font-bold uppercase mb-2">Institucional</p>
             <ul className="space-y-1">
               <li>
-                <button onClick={() => setIsAboutModalOpen(true)} className="hover:text-pink-500">
+                <button onClick={() => setIsAboutModalOpen(true)} className="hover:text-pink-500 cursor-pointer">
                   Sobre
                 </button>
               </li>
