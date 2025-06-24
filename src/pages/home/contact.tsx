@@ -75,8 +75,8 @@ export function ContactSection() {
 
   const linkList = [
     // { title: 'Instagram', text: '@thermopink', link: '#', svg: instagramSvg },
-    { title: 'Email', text: 'contato@thermopink.com', link: '#', svg: EmailSvg },
-    { title: 'WhatsApp', text: '+55 15 99747-5220', link: '#', svg: whatsAppSvg },
+    { title: 'Email', text: 'contato@thermopink.com', link: 'mailto:contato@thermopink.com?subject=Quero emagrecer&body=Olá, gostaria de saber mais sobre o ThermoPink', svg: EmailSvg },
+    { title: 'WhatsApp', text: '+55 15 99747-5220', link: 'https://wa.me/5515997475220?text=Olá%2C+tenho+interesse+em+saber+mais+sobre+o+produto', svg: whatsAppSvg },
   ]
 
   return (
@@ -119,7 +119,12 @@ export function ContactSection() {
               <li className="space-y-2">
                 <span className="font-bold">Horário de funcionamento</span>
                 <p className="text-sm">Segunda a sexta, das 8h às 18h</p>
-                <div className="flex text-pink-500 gap-2 items-center justify-center md:justify-start">
+                <a 
+                  className="flex text-pink-500 gap-2 items-center justify-center md:justify-start "
+                  href="https://wa.me/5515997475220?text=Olá%2C+tenho+interesse+em+saber+mais+sobre+o+produto"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -147,7 +152,7 @@ export function ContactSection() {
                         C276.546,215.678,222.799,268.994,156.734,268.994z"/>
                   </svg>
                   <span className="text-white text-sm">+55 15 99747-5220</span>
-                </div>
+                </a>
               </li>
 
               <li className="mt-4 space-y-2 flex gap-2 items-center justify-center md:justify-start">
