@@ -171,17 +171,17 @@ export function ContactSection() {
                 </button>
               </li>
               <li>
-                <a href="#" className="hover:text-pink-500">
+                <a href="#nutricional-details" className="hover:text-pink-500">
                   Cápsulas
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-pink-500">
+                <a href="#benefits" className="hover:text-pink-500">
                   Benefícios
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-pink-500">
+                <a href="#lose-weight" className="hover:text-pink-500">
                   Emagreça
                 </a>
               </li>
@@ -191,27 +191,27 @@ export function ContactSection() {
           <div>
             <p className="text-pink-500 text-4xl font-[Bebas_Neue] font-bold uppercase mb-2">AJUDA</p>
             <ul className="space-y-1">
-              <li>
+              {/* <li>
                 <a href="#" className="hover:text-pink-500">
                   Produto
                 </a>
-              </li>
+              </li> */}
               <li>
-                <a href="#" className="hover:text-pink-500">
+                <p className="hover:text-pink-500">
                   Garantia de 30 dias
-                </a>
+                </p>
               </li>
               <li>
-                <a href="#" className="hover:text-pink-500">
+                <a href="#faq" className="hover:text-pink-500">
                   Perguntas frequentes
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-pink-500">
+                <a href='https://wa.me/5515997475220?text=Olá%2C+tenho+interesse+em+saber+mais+sobre+o+produto' className="hover:text-pink-500">
                   Fale conosco
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="hover:text-pink-500">
                   Políticas de privacidade
                 </a>
@@ -220,7 +220,7 @@ export function ContactSection() {
                 <a href="#" className="hover:text-pink-500">
                   Termos de uso
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

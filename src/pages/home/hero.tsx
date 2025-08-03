@@ -54,17 +54,9 @@ export function Hero() {
           </div>
         </div>
 
-
         <Suspense fallback={<LoaderComponent />}>
           <HeroImg />
         </Suspense>
-        {/* <div className="mt-0 hidden lg:flex -ml-32">
-          <img
-            src={HeroImg}
-            alt="Thermo Pink Produto"
-            // loading="lazy"
-          />
-        </div> */}
       </div>
     </section>
   )

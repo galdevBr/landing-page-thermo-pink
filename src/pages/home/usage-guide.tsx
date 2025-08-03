@@ -4,7 +4,7 @@ import { HotmartButton } from "@/components/ui/button";
 
 export function UsageGuide() {
   return (
-    <section className="w-full py-16 px-4 md:px-8 lg:px-16 bg-white">
+    <section className="w-full py-16 px-4 md:px-8 lg:px-16 bg-white" id="usage-guide">
       <div className="container mx-auto md:w-3/4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-4  items-center">
           <div className="relative flex items-center justify-center">
