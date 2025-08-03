@@ -7,7 +7,7 @@ import MetabolismIcon from "@/assets/icons/metabolism.png"
 import PowerIcon from "@/assets/icons/power.png"
 import TorsoIcon from "@/assets/icons/torso.png"
 import { ShadowedStrokeTitle } from "@/components/shadowed-stroke-title"
-import { Button } from "@/components/ui/button"
+import { HotmartButton } from "@/components/ui/button"
 
 export function Benefits() {
   const benefitsList = [
@@ -49,9 +49,9 @@ export function Benefits() {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center mt-16">
-          <Button >
+          <HotmartButton >
             ATIVE SUA MELHOR VERSÃO
-          </Button>
+          </HotmartButton>
         </div>
       </div>
     </section>

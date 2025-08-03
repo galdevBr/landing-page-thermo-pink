@@ -3,13 +3,13 @@ import ThreeProductOfferImg from "@/assets/3-products-purchase.png";
 import SixProductOfferImg from "@/assets/6-products-purchase.png";
 import { OfferCard } from "@/components/offer-card";
 import { ShadowedStrokeTitle } from "@/components/shadowed-stroke-title";
-import { Button } from "@/components/ui/button";
+import { HotmartButton } from "@/components/ui/button";
 
 export function ProductOffer() {
   const offersList = [
-    { title: "COMBO 1 MÊS", price: 12900, installments: 1070, numberOfProducts: 1, productImg: productOfferImg, },
-    { title: "COMBO 3 MÊS", price: 29700, installments: 2475, numberOfProducts: 3, productImg: ThreeProductOfferImg, isPopular: true },
-    { title: "COMBO 6 MÊS", price: 53400, installments: 4450, numberOfProducts: 6, productImg: SixProductOfferImg, },
+    { title: "COMBO 1 MÊS", price: 11900, installments: 1070, numberOfProducts: 1, productImg: productOfferImg, hotmartUrl: "https://pay.hotmart.com/A101112381J" },
+    { title: "COMBO 3 MÊS", price: 29700, installments: 2475, numberOfProducts: 3, productImg: ThreeProductOfferImg, isPopular: true, hotmartUrl: "https://pay.hotmart.com/A101112381J?off=ejlxkfti" },
+    { title: "COMBO 6 MÊS", price: 53400, installments: 4450, numberOfProducts: 6, productImg: SixProductOfferImg, hotmartUrl: "https://pay.hotmart.com/A101112381J?off=2m17yba2" },
   ]
 
   return (
@@ -33,7 +33,7 @@ export function ProductOffer() {
         </div>
         <div className="mt-12 flex flex-col items-center justify-center text-center gap-8">
 
-          <Button className="mt-10">CLIQUE AQUI</Button>
+          <HotmartButton className="mt-10">CLIQUE AQUI</HotmartButton>
         </div>
       </div>
     </section>

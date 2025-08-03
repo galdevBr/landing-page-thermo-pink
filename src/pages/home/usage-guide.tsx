@@ -1,6 +1,6 @@
 import ThermoPinkLogo from "@/assets/logo-thermo-white.svg";
 import UsageGuideCapsuleImg from "@/assets/usage-guide-capsule.png";
-import { Button } from "@/components/ui/button";
+import { HotmartButton } from "@/components/ui/button";
 
 export function UsageGuide() {
   return (
@@ -37,9 +37,9 @@ export function UsageGuide() {
 
             <img src={ThermoPinkLogo} alt="thermo pink logo" className="mt-12" />
 
-            <Button className="italic mt-6">
+            <HotmartButton className="italic mt-6">
               QUERO EMAGRECER
-            </Button>
+            </HotmartButton>
           </div>
 
         </div>

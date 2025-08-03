@@ -1,5 +1,5 @@
 import productImg from "@/assets/video-section-product.png"
-import { Button } from "@/components/ui/button"
+import { HotmartButton } from "@/components/ui/button"
 import { BarChartComponent } from "./mixed-bar-chart"
 
 import EfficiencyIcon from '@/assets/icons/100-icon.svg'
@@ -75,7 +75,7 @@ export function Video() {
           </div>
         </div>
         
-        <Button variant="secondaryPink" className="text-white">COMECE AGORA</Button>
+        <HotmartButton variant="secondaryPink" className="text-white">COMECE AGORA</HotmartButton>
       </div>
 
     </section>

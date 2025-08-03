@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Button } from "./ui/button";
+import { HotmartButton } from "./ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
 
 interface IProps {
@@ -10,11 +10,12 @@ interface IProps {
     isPopular?: boolean;
     productImg: string;
     installments: number;
+    hotmartUrl?: string;
   }
 }
 
 export function OfferCard({ product }: IProps) {
-  const { title, price, numberOfProducts, isPopular, productImg, installments } = product;
+  const { title, price, numberOfProducts, isPopular, productImg, installments, hotmartUrl } = product;
 
   const formattedPrice = (price / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
   const pricePerProduct = ((price / numberOfProducts) / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minimumFractionDigits: 0, maximumFractionDigits: 0 });
@@ -81,9 +82,12 @@ export function OfferCard({ product }: IProps) {
       </CardContent>
 
       <CardFooter className="justify-center mb-4">
-        <Button className={cn("italic font-bold rounded-2xl", { "bg-black hover:bg-black/80": isPopular })}>
+        <HotmartButton 
+          className={cn("italic font-bold rounded-2xl", { "bg-black hover:bg-black/80": isPopular })}
+          hotmartUrl={hotmartUrl}
+        >
           COMPRAR AGORA
-        </Button>
+        </HotmartButton>
       </CardFooter>
     </Card>
   )

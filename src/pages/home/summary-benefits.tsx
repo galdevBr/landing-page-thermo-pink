@@ -1,5 +1,5 @@
 import ProductsImg from "@/assets/products-image.png"
-import { Button } from "@/components/ui/button"
+import { HotmartButton } from "@/components/ui/button"
 
 export function SummaryBenefits() {
 
@@ -30,12 +30,12 @@ export function SummaryBenefits() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button
+            <HotmartButton
               variant="secondaryPink"
               className="text-white italic"
             >
               QUERO EMAGRECER
-            </Button>
+            </HotmartButton>
           </div>
         </div>
       </div>

@@ -1,8 +1,9 @@
 import ThermoPinkLogo from "@/assets/logo-thermo.png";
 import { lazy, Suspense } from 'react';
 
-import { Button } from "@/components/ui/button";
-import { CircleCheckBig, Loader } from "lucide-react";
+import { LoaderComponent } from "@/components/loader";
+import { HotmartButton } from "@/components/ui/button";
+import { CircleCheckBig } from "lucide-react";
 
 export function Hero() {
   const HeroImg = lazy(() => import("../../components/hero-img"));
@@ -46,15 +47,15 @@ export function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 self-center">
-              <Button >
+              <HotmartButton>
                 COMPRAR AGORA
-              </Button>
+              </HotmartButton>
             </div>
           </div>
         </div>
 
 
-        <Suspense fallback={<div className="flex items-center justify-center animate-spin"><Loader /></div>}>
+        <Suspense fallback={<LoaderComponent />}>
           <HeroImg />
         </Suspense>
         {/* <div className="mt-0 hidden lg:flex -ml-32">
