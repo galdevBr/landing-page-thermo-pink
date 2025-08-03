@@ -1,0 +1,1 @@
+import{j as e}from"./index-s6ofDGwP.js";const t="/landing-page-thermo-pink/assets/hero-image-dVHbRRRt.png",s=()=>e.jsx("div",{className:"relative mt-0 hidden lg:flex -ml-32",children:e.jsx("img",{src:t,alt:"Thermo Pink Produto",loading:"lazy",className:"absolute top-0 right-0"})});export{s as default};
