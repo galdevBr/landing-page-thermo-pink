@@ -1,5 +1,6 @@
 import IngredientsImg from "@/assets/ingredients-image.png";
 import { NutricionalTable } from "@/components/nutricional-table";
+import { ingredients } from "@/constants/ingredients";
 
 export function NutricionalDetails() {
   return (
@@ -12,11 +13,7 @@ export function NutricionalDetails() {
 
           <div className="text-foreground space-y-2 justify-start">
             <p className="uppercase  ">
-              <strong>Ingredientes:</strong> ÁTAURINA, ARGININA, CARNITINA, CAFEÍNA, EXTRATO DE LARANJA MORO
-              [CITRUS SINENSIS (L.) OSBECK], BISGLICINATO DE ZINCO (ZINCO), PICOLINATO DE CROMO (CROMO), COLECALCIFEROL 
-              (VITAMINA D), RIBOFLAVINA (VITAMINA B2), CLORIDRATO DE TIAMINA (VITAMINA B1), METILCOBALAMINA 
-              (VITAMINA B12), ANTIUMECTANTE DIÓXIDO DE SILÍCIO E ESTEARATO DE MAGNÉSIO.COMPOSIÇÃO DA CÁPSULA: GELATINA, 
-              ÁGUA PURIFICADA E CORANTES AZORRUBINA, AMARELO DE QUINOLEÍNA, PONCEAU 4R E DIÓXIDO DE TITÂNIO. 
+              <strong>Ingredientes:</strong> {ingredients.join(", ")}
               <strong> Não contém glúten.</strong>
             </p>
             <p>Produto dispensado de obrigatoriedade de registro conforme RDC nº 240/2018.</p>

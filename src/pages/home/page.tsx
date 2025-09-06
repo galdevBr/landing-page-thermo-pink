@@ -1,3 +1,5 @@
+import { animationStagger } from "@/lib/animation";
+import { motion } from "framer-motion";
 import { Benefits } from "./benefits";
 import { ContactSection } from "./contact";
 import { DetailedBenefits } from "./detailed-benefits";
@@ -13,7 +15,10 @@ import { Video } from "./video";
 
 export function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-gradient-to-b from-background to-black text-white overflow-hidden">
+    <motion.main 
+      className="flex min-h-screen flex-col bg-gradient-to-b from-background to-black text-white overflow-hidden"
+      variants={animationStagger}
+    >
       <Hero />
       <SummaryBenefits />
       <Benefits />
@@ -26,6 +31,6 @@ export function Home() {
       <FAQSection />
       <ContactSection />
       <Footer />
-    </main>
+    </motion.main>
   )
 }

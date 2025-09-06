@@ -5,7 +5,7 @@ const HeroImg = () => {
     <div className="relative mt-0 hidden lg:flex -ml-32">
       <img
         src={HeroImage}
-        alt="Thermo Pink Produto"
+        alt="Frasco do produto Thermo Pink"
         loading="lazy"
         className="absolute top-0 right-0"
       />
