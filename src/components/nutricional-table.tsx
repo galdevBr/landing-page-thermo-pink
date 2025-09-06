@@ -1,5 +1,4 @@
 import { nutricionalData } from "@/constants/nutricional-data";
-import { motion } from "framer-motion";
 import { Table, TableBody, TableCell, TableFooter, TableHead, TableHeader, TableRow } from "./ui/table";
 
 export function NutricionalTable() {
