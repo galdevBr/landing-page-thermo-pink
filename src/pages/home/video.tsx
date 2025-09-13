@@ -13,6 +13,7 @@ export function Video() {
 
 
       <div className="container flex flex-col items-center mx-auto space-y-8 md:space-y-12">
+        {/* //TODO Once video is ready, add it here 
         <div className="relative w-full aspect-video bg-pink-500 p-4 mx-auto max-w-5xl rounded-lg">
           <iframe
             className="w-full h-full rounded-lg"
@@ -24,7 +25,7 @@ export function Video() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
           />
-        </div>
+        </div> */}
 
         <div className="grid md:grid-cols-2 max-w-5xl gap-8 md:gap-2">
           <div className="flex flex-col justify-center items-center space-y-8 text-center">

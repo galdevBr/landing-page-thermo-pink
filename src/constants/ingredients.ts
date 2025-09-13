@@ -1,5 +1,5 @@
 export const ingredients = [
-  "ÁTAURINA",
+  "TAURINA",
   "ARGININA",
   "CARNITINA",
   "CAFEÍNA",
