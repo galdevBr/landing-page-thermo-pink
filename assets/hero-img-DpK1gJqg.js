@@ -1,0 +1,1 @@
+import{j as e}from"./index-09pC7R9w.js";const s="/assets/hero-image-dVHbRRRt.png",t=()=>e.jsx("div",{className:"relative mt-0 hidden lg:flex -ml-32",children:e.jsx("img",{src:s,alt:"Frasco do produto Thermo Pink",loading:"lazy",className:"absolute top-0 right-0"})});export{t as default};
