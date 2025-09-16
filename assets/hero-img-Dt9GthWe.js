@@ -1,0 +1,1 @@
+import{j as e}from"./index-B0fPSWtc.js";const a="/landing-page-thermo-pink/assets/hero-image-dVHbRRRt.png",s=()=>e.jsx("div",{className:"relative mt-0 hidden lg:flex -ml-32",children:e.jsx("img",{src:a,alt:"Frasco do produto Thermo Pink",loading:"lazy",className:"absolute top-0 right-0"})});export{s as default};
