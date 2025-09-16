@@ -1,10 +1,12 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Button } from "../ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "../ui/dialog";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 
 export function SuccessDialog() {
+  const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(true);
+
   const nameRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
 
@@ -22,10 +24,11 @@ export function SuccessDialog() {
   };
 
   return (
-    <Dialog open={true}>
+    <Dialog open={isSuccessModalOpen} onOpenChange={setIsSuccessModalOpen}>
       <DialogContent
         // className="sm:min-w-1xl md:min-w-2xl lg:min-w-3xl max-w-max"
         className="p-12"
+        showCloseButton={false}
       >
         <DialogHeader>
           <DialogTitle className="text-white text-3xl text-center font-bold">
