@@ -2,7 +2,7 @@ import ThermoPinkLogo from "@/assets/logo-thermo.png";
 import { lazy, Suspense } from 'react';
 
 import { LoaderComponent } from "@/components/loader";
-import { HotmartButton } from "@/components/ui/button";
+import { MercadoPagoButton } from "@/components/ui/button";
 import { animationFadeInDown, animationStagger } from "@/lib/animation";
 import { motion } from "framer-motion";
 import { CircleCheckBig } from "lucide-react";
@@ -44,7 +44,7 @@ export function Hero() {
 
 
           <div className="flex flex-col gap-8 max-w-full md:max-w-max justify-start md:items-center">
-            <motion.div 
+            <motion.div
               className="border-2 rounded-lg border-pink-600 p-6 grid grid-cols-2 gap-4 max-w-fit mx-auto"
               variants={animationFadeInDown}
             >
@@ -57,10 +57,14 @@ export function Hero() {
             </motion.div>
 
             <motion.div className="flex flex-col sm:flex-row gap-4 self-center" variants={animationFadeInDown}>
-              <HotmartButton>
+              <MercadoPagoButton>
                 COMPRAR AGORA
-              </HotmartButton>
+              </MercadoPagoButton>
             </motion.div>
+
+            <motion.p className="text-xs italic font-semibold" variants={animationFadeInDown}>
+              Frete Grátis para todo o Brasil!
+            </motion.p>
           </div>
         </motion.div>
 

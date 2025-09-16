@@ -1,6 +1,6 @@
 import ThermoPinkLogo from "@/assets/logo-thermo-white.svg";
 import LoseWeightImg from "@/assets/lose-weight-background.png";
-import { HotmartButton } from "@/components/ui/button";
+import { MercadoPagoButton } from "@/components/ui/button";
 
 export function LoseWeight() {
   return (
@@ -25,7 +25,7 @@ export function LoseWeight() {
 
           <img src={ThermoPinkLogo} alt="thermo pink logo" />
 
-          <HotmartButton>QUERO EMAGRECER</HotmartButton>
+          <MercadoPagoButton>QUERO EMAGRECER</MercadoPagoButton>
         </div>
 
         <div className="pt-4">

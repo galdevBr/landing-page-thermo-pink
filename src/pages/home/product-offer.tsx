@@ -1,6 +1,5 @@
 import { OfferCard } from "@/components/offer-card";
 import { ShadowedStrokeTitle } from "@/components/shadowed-stroke-title";
-import { HotmartButton } from "@/components/ui/button";
 import { offersList } from "@/constants/offers-cards-list";
 import { animationStagger } from "@/lib/animation";
 import { motion } from "framer-motion";
@@ -31,10 +30,6 @@ export function ProductOffer() {
             />
           ))}
         </motion.div>
-        <div className="mt-12 flex flex-col items-center justify-center text-center gap-8">
-
-          <HotmartButton className="mt-10">CLIQUE AQUI</HotmartButton>
-        </div>
       </div>
     </section>
   )

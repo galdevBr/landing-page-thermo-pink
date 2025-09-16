@@ -1,5 +1,5 @@
 import ProductsImg from "@/assets/products-image.png";
-import { HotmartButton } from "@/components/ui/button";
+import { MercadoPagoButton } from "@/components/ui/button";
 import { animationFadeInDown, animationStagger } from "@/lib/animation";
 import { motion } from "framer-motion";
 
@@ -41,12 +41,12 @@ export function SummaryBenefits() {
           </motion.p>
 
           <motion.div className="flex flex-col sm:flex-row gap-4" variants={animationFadeInDown}>
-            <HotmartButton
+            <MercadoPagoButton
               variant="secondaryPink"
               className="text-white italic"
             >
               QUERO EMAGRECER
-            </HotmartButton>
+            </MercadoPagoButton>
           </motion.div>
         </motion.div>
       </motion.div>

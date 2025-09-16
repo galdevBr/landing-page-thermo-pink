@@ -1,5 +1,5 @@
 import { ShadowedStrokeTitle } from "@/components/shadowed-stroke-title"
-import { HotmartButton } from "@/components/ui/button"
+import { MercadoPagoButton } from "@/components/ui/button"
 import { benefitsCardList } from "@/constants/benefits-card-list"
 import { animationFadeInDown, animationStagger } from "@/lib/animation"
 import { motion } from "framer-motion"
@@ -47,9 +47,9 @@ export function Benefits() {
         </motion.div>
 
         <motion.div className="flex flex-col sm:flex-row gap-4 items-center justify-center mt-16" variants={animationFadeInDown}>
-          <HotmartButton >
+          <MercadoPagoButton >
             ATIVE SUA MELHOR VERSÃO
-          </HotmartButton>
+          </MercadoPagoButton>
         </motion.div>
       </motion.div>
     </motion.section>

@@ -1,6 +1,7 @@
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
 
+import { mercadoPagoLinks } from "@/constants/mercado-pago-links"
 import { cn } from "@/lib/utils"
 import React, { forwardRef, useEffect, useRef, useState } from "react"
 
@@ -60,7 +61,6 @@ Button.displayName = "Button"
 export { Button }
 
 // https://hotmart.com/pt-br/checkout/checkout-widget
-
 export interface HotmartButtonProps extends ButtonProps {
   hotmartUrl?: string // permite customizar o URL base
 }
@@ -71,20 +71,20 @@ const HotmartButton = forwardRef<HTMLButtonElement, HotmartButtonProps>(
     const hotmartRef = useRef<HTMLAnchorElement | null>(null);
 
     useEffect(() => {
-      const baseUrl = new URL(hotmartUrl || "https://pay.hotmart.com/A101112381J");
+      const baseUrl = new URL(hotmartUrl || "https://mpago.la/2eH9rdR");
       const queryParams = new URLSearchParams(window.location.search);
-    
+
       // Sempre adiciona esses fixos
       baseUrl.searchParams.set("checkoutMode", "2");
       // baseUrl.searchParams.set("off", "mc1es8lm");
-    
+
       // Adiciona UTM dinamicamente se existirem
       for (const [key, value] of queryParams.entries()) {
         if (key.startsWith("utm_")) {
           baseUrl.searchParams.set(key, value);
         }
       }
-    
+
       setCheckoutUrl(baseUrl.toString());
     }, [hotmartUrl]);
 
@@ -116,7 +116,7 @@ const HotmartButton = forwardRef<HTMLButtonElement, HotmartButtonProps>(
           className={className}
           {...props}
         />
-          
+
 
         {/* Botão invisível da Hotmart que aciona o modal */}
         <a
@@ -132,3 +132,35 @@ const HotmartButton = forwardRef<HTMLButtonElement, HotmartButtonProps>(
 HotmartButton.displayName = "HotmartButton";
 
 export { HotmartButton }
+
+
+export interface MercadoPagoButtonAnchor extends ButtonProps {
+  url?: string;
+};
+
+
+const MercadoPagoButton = forwardRef<HTMLButtonElement, MercadoPagoButtonAnchor>(
+  ({ className, variant, size, url = mercadoPagoLinks[1].href, ...props }, ref) => {
+    return (
+      <Button
+        ref={ref}
+        variant={variant}
+        size={size}
+        className={cn(buttonVariants({ variant, size, className }), "cursor-pointer")}
+        asChild
+        {...props}
+      >
+        <a
+          href={url}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          {props.children}
+        </a>
+      </Button>
+    );
+  }
+);
+MercadoPagoButton.displayName = "MercadoPagoButton";
+
+export { MercadoPagoButton }

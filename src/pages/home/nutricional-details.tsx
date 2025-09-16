@@ -23,7 +23,6 @@ export function NutricionalDetails() {
             <img src={IngredientsImg} className="flex justify-self-center" />
           </div>
 
-
         </div>
       </div>
     </section>

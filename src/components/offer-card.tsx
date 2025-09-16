@@ -1,7 +1,7 @@
 import { animationFadeInDown } from "@/lib/animation";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { HotmartButton } from "./ui/button";
+import { MercadoPagoButton } from "./ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
 
 
@@ -13,12 +13,12 @@ interface IProps {
     isPopular?: boolean;
     productImg: string;
     installments: number;
-    hotmartUrl?: string;
+    url?: string;
   }
 }
 
 export function OfferCard({ product }: IProps) {
-  const { title, price, numberOfProducts, isPopular, productImg, installments, hotmartUrl } = product;
+  const { title, price, numberOfProducts, isPopular, productImg, installments, url } = product;
 
   const formattedPrice = (price / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
   const pricePerProduct = ((price / numberOfProducts) / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minimumFractionDigits: 0, maximumFractionDigits: 0 });
@@ -88,13 +88,20 @@ export function OfferCard({ product }: IProps) {
           </div>
         </CardContent>
 
-        <CardFooter className="justify-center mb-4">
-          <HotmartButton
+        <CardFooter className="flex flex-col justify-center mb-4 space-y-4">
+          <MercadoPagoButton
             className={cn("italic font-bold rounded-2xl", { "bg-black hover:bg-black/80": isPopular })}
-            hotmartUrl={hotmartUrl}
+            url={url}
           >
             COMPRAR AGORA
-          </HotmartButton>
+          </MercadoPagoButton>
+
+          <p className={cn(
+            "text-sm italic font-semibold",
+            { "text-white": isPopular }
+          )}>
+            Frete Grátis para todo o Brasil!
+          </p>
         </CardFooter>
       </Card>
     </motion.div>

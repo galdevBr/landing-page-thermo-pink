@@ -1,5 +1,5 @@
 import productImg from "@/assets/video-section-product.png";
-import { HotmartButton } from "@/components/ui/button";
+import { MercadoPagoButton } from "@/components/ui/button";
 import { prosList } from "@/constants/pros-list";
 import { animationFadeInDown, animationStagger } from "@/lib/animation";
 import { motion } from "framer-motion";
@@ -73,7 +73,7 @@ export function Video() {
           </div>
         </div>
 
-        <HotmartButton variant="secondaryPink" className="text-white">COMECE AGORA</HotmartButton>
+        <MercadoPagoButton variant="secondaryPink" className="text-white">COMECE AGORA</MercadoPagoButton>
       </div>
     </section>
   )
