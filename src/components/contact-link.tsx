@@ -5,7 +5,7 @@ interface IProps {
   link: string;
 }
 
-export function ContactLink({ link, svg, title, text }: IProps) {
+export function ContactLink({ link, svg, title }: IProps) {
   return (
     <a href={link} className="text-pink-500 hover:text-white flex flex-col items-center justify-center gap-1 group" target="_blank" rel="noopener noreferrer">
       {svg}
