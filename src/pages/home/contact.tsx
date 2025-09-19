@@ -75,7 +75,7 @@ export function ContactSection() {
 
   const linkList = [
     // { title: 'Instagram', text: '@thermopink', link: '#', svg: instagramSvg },
-    { title: 'Email', text: 'contato@thermopink.com', link: 'mailto:contato@thermopink.com?subject=Quero emagrecer&body=Olá, gostaria de saber mais sobre o ThermoPink', svg: EmailSvg },
+    { title: 'Email', text: 'thermopinkpurecompany@gmail.com', link: 'mailto:thermopinkpurecompany@gmail.com?subject=Quero emagrecer&body=Olá, gostaria de saber mais sobre o ThermoPink', svg: EmailSvg },
     { title: 'WhatsApp', text: '+55 15 99747-5220', link: 'https://wa.me/5515997475220?text=Olá%2C+tenho+interesse+em+saber+mais+sobre+o+produto', svg: whatsAppSvg },
   ]
 
